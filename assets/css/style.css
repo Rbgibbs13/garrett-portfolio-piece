@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: rgb(116, 160, 201);
+    --grey-color: rgb(66, 66, 66);
+    --salsa-font: "Salsa", cursive;
+    --roboto-font: font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+#header-container {
+    background-image: url("/assets/images/french_country.jpg");
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 8rem;
+    overflow: hidden;
+}
+
+#header-title {
+    color: white;
+    font-family: var(--salsa-font);
+    margin-left: 2%;
+    height: 100%;
+    width: 48%;
+    text-shadow: .2rem .2rem var(--grey-color);
+}
+
+#hero {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.299);
+}
+
+#header-title h1 {
+    padding: 2.5rem;
+    height: 100%;
+}
+
+#header-nav {
+    font-family: var(--salsa-font);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    height: 100%;
+    width: 50%;
+    font-size: 100%;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    text-shadow: .2rem .2rem var(--grey-color);
+}
+
+.link-text {
+    padding: 3rem 0;;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    transition-duration: .8s;
+}
+
+#overview-container {
+    margin-bottom: 1%;
+    min-height: 12rem;
+    height: auto;
+    width: 100%;
+}
+
+#overview-container div {
+    padding: 1% 5%;
+    width: 90%;
+}
+
+#overview-container h2 {
+    color: white;
+    font-family: var(--salsa-font);
+    font-size: 200%;
+    margin-bottom: 1%;
+    text-align: center;
+    text-shadow: .2rem .2rem var(--grey-color);
+}
+
+#overview-container p {
+    color: white;
+    font-size: 125%;
+}
+
+.rule {
+    border: .1em solid var(--grey-color);
+}
+
+#main-container {
+    margin-bottom: 5rem;
+}
+
+#section-container {
+    width: 90%;
+    margin: 0 5%;
+}
+
+#gallery-container {
+    background-color: var(--grey-color);
+    border: .1rem solid red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60rem;
+    width: 100%;
+    margin: 0%;
+}
+
+.gallery {
+    height: 50%;
+    width: 50%;
+    text-decoration: none;
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-image {
+    opacity: 30%;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-image:hover {
+    transition-duration: .8s;
+    color: var(--main-color);
+    opacity: 100%;
+}
+
+.gallery-title {
+    color: rgb(255, 234, 234);
+    font-family: var(--roboto-font);
+    font-size: 150%;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.gallery-title:hover {
+    transition-duration: .8s;
+    color: var(--main-color);
+}
+
+#work-container {
+    height: auto;
+    width: 100%;
+}
+
+#work-title-container {
+    padding: .5% 5%;
+    width: 90%;
+}
+
+.title-work {
+    color: white;
+    font-family: var(--salsa-font);
+    font-size: 200%;
+    text-align: center;
+    text-shadow: .2rem .2rem var(--grey-color);
+}
+
+#work-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 10rem;
+    width: 100%;
+}
+
+.work-item {
+    height: auto;
+    width: 33%;
+}
+
+.work-title {
+    font-family: var(--salsa-font);
+    font-size: 150%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#contact-container {
+    height: auto;
+    min-height: 10rem;
+    margin: auto auto;
+    width: 90%;
+}
+
+#contacts-div {
+    margin: auto;
+    width: 50%;
+}
+
+.contact-title {
+    color: white;
+    font-family: var(--salsa-font);
+    font-size: 200%;
+    padding: .5%;
+    text-align: center;
+    text-shadow: .2rem .2rem var(--grey-color);
+}
+
+.contacts-title {
+    padding: 1%;
+    font-family: var(--salsa-font);
+    text-align: left;
+}
+
+.contact-span {
+    color: whitesmoke;
+}
+
+.contact-span a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.contact-span a:hover {
+    color: var(--grey-color);
+    transition-duration: .8s;
+}
+
+footer {
+    background-color: var(--grey-color);
+    position: fixed;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    text-shadow: .2rem .2rem black;
+}
+
+#footer-title {
+    font-family: var(--roboto-font);
+    font-size: 200%;
+    font-weight: 500;
+    color: var(--main-color);
+    text-align: center;
+    height: 100%;
+    padding: .6% 0%;
+}
