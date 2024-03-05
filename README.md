@@ -1,2 +1,2 @@
 # garrett-portfolio-piece
-Garrett Portfolio
+Garrett's Portfolio
