@@ -6,6 +6,7 @@
 :root {
     --main-color: rgb(116, 160, 201);
     --grey-color: rgb(66, 66, 66);
+    --opaque-color: rgba(112, 112, 112, 0);
     --salsa-font: "Salsa", cursive;
     --roboto-font: font-family: "Roboto", sans-serif;
 }
@@ -112,7 +113,7 @@ body {
 
 #gallery-container {
     background-color: var(--grey-color);
-    border: .1rem solid red;
+    border: .1rem solid goldenrod;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -178,24 +179,46 @@ body {
 }
 
 #work-flex {
+    border: .1rem solid goldenrod;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
+    margin: auto;
     min-height: 10rem;
-    width: 100%;
+    width: 90%;
 }
 
 .work-item {
     height: auto;
-    width: 33%;
+    width: 33.33%;
+}
+
+.work-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.work-image {
+    height: 100%;
+    width: 100%;
+}
+
+.work-item a:hover {
+    color: var(--opaque-color);
+    transition-duration: .8s;
 }
 
 .work-title {
     font-family: var(--salsa-font);
     font-size: 150%;
+    padding: 1%;
+    position: absolute;
     text-align: center;
-    text-decoration: none;
+}
+
+.work-title p {
+    font-size: 50%;
 }
 
 #contact-container {
